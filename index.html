@@ -20,6 +20,12 @@
       background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
     }
   </style>
+  <script>
+    function send_email() {
+      location.href = "mailto:mnakrosis@trustflux.co.uk";
+    }
+  </script>
+
 </head>
 
 <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif;">
@@ -51,7 +57,7 @@
         class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
         id="nav-content">
         <ul class="list-reset lg:flex justify-end flex-1 items-center">
-          <li class="mr-3">
+          <!-- <li class="mr-3">
             <a class="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Active</a>
           </li>
           <li class="mr-3">
@@ -61,11 +67,11 @@
           <li class="mr-3">
             <a class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
               href="#">link</a>
-          </li>
+          </li> -->
         </ul>
-        <button id="navAction"
+        <button id="navAction" onclick=send_email()
           class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          Action
+          Contact us
         </button>
       </div>
     </div>
@@ -83,10 +89,10 @@
         <p class="leading-normal text-2xl mb-8">
           Agile development using the most up to date standards and tools
         </p>
-        <button
+        <!-- <button
           class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-          Subscribe
-        </button>
+          Contact us
+        </button> -->
       </div>
       <!--Right Col-->
       <div class="w-full md:w-3/5 py-6 text-center">
@@ -129,17 +135,11 @@
       <div class="flex flex-wrap">
         <div class="w-5/6 sm:w-1/2 p-6">
           <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-            Lorem ipsum dolor sit amet
+            Enterprise application development
           </h3>
           <p class="text-gray-600 mb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-            amet ligula.
-            <br />
-            <br />
-
-            Images from:
-
-            <a class="text-pink-500 underline" href="https://undraw.co/">undraw.co</a>
+            User interfaces development with latest user experience standards, backend development that follows RESTful
+            practices and is fully end to end tested
           </p>
         </div>
         <div class="w-full sm:w-1/2 p-6">
@@ -359,16 +359,11 @@
         <div class="w-full sm:w-1/2 p-6 mt-6">
           <div class="align-middle">
             <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
-              Lorem ipsum dolor sit amet
+              Cloud development
             </h3>
             <p class="text-gray-600 mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-              amet ligula.
-              <br />
-              <br />
-              Images from:
-
-              <a class="text-pink-500 underline" href="https://undraw.co/">undraw.co</a>
+              Migration of on premise infrastructure to multi cloud, budget management plans, latest security and
+              networking standards implementation
             </p>
           </div>
         </div>
@@ -378,7 +373,7 @@
   <section class="bg-white border-b py-8">
     <div class="container mx-auto flex flex-wrap pt-4 pb-12">
       <h2 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">
-        Title
+        Available consultants
       </h2>
       <div class="w-full mb-4">
         <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
@@ -393,16 +388,17 @@
               React.js & React-native
             </div>
             <p class="text-gray-800 text-base px-6 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-              amet ligula.
+              Low latency, user-experience friendly web and mobile applications developed fast. GraphQL and Redux
+              expertise for client side state
+              management.
             </p>
           </a>
         </div>
         <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
           <div class="flex items-center justify-start">
-            <button
+            <button onclick=send_email()
               class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              Action
+              Who is available
             </button>
           </div>
         </div>
@@ -417,16 +413,17 @@
               Node.js
             </div>
             <p class="text-gray-800 text-base px-6 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-              amet ligula.
+              Agile and fast RESTful API development that is fully end to end tested. Scalable systems that empower
+              businesses with
+              enterprise data solutions.
             </p>
           </a>
         </div>
         <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
           <div class="flex items-center justify-center">
-            <button
+            <button onclick=send_email()
               class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              Action
+              Who is available
             </button>
           </div>
         </div>
@@ -441,16 +438,18 @@
               AWS, Azure and GCP clouds
             </div>
             <p class="text-gray-800 text-base px-6 mb-5">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo posuere et sit
-              amet ligula.
+              Cloud migrations, automation of workflows to enable development of applications more rapidly, latest
+              security and
+              networking standards, identity management, VPN solutions. Scalable architecture that is fully monitored
+              and cheap to manage.
             </p>
           </a>
         </div>
         <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
           <div class="flex items-center justify-end">
-            <button
+            <button onclick=send_email()
               class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
-              Action
+              Who is available
             </button>
           </div>
         </div>
@@ -493,7 +492,7 @@
     <h3 class="my-4 text-3xl leading-tight">
       Experts at your fingertips
     </h3>
-    <button
+    <button onclick=send_email()
       class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
       Contact us
     </button>
@@ -563,7 +562,8 @@
               <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">About Us</a>
             </li>
             <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-              <a href="#" class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
+              <a href="mailto:mnakrosis@trustflux.co.uk"
+                class="no-underline hover:underline text-gray-800 hover:text-pink-500">Contact</a>
             </li>
           </ul>
         </div>
