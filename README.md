@@ -17,14 +17,20 @@ The page targets four keyword clusters, chosen from SERP research because they a
 
 React, Next.js, Node.js, NestJS, TypeScript, GraphQL, FIX protocol - woven into the delivery section with fintech/trading qualifiers ("fintech React and Node.js contractor London", "trading platform React developer" are the winnable combinations). Never as headlines.
 
-### Roadmap (highest-ROI next steps, in order)
+### Done (Aug 2026)
 
-1. **Publish real pricing.** Every ranking UK fractional-CTO page leads with concrete rates (£800-£2,000/day, £3k-£7k/month benchmarks). A dedicated pricing/engagement page with actual numbers is the single highest-conversion addition.
-2. **Split into service pages** once content exists to support them: `/technology-due-diligence`, `/fractional-cto-london`, `/azure-cost-review`, `/agentic-ai`. Separate URLs rank better for their clusters than anchors on one page.
-3. **Checklist lead magnets.** Every DD SERP is dominated by checklist pages with downloads: "AI due diligence checklist" is the obvious first one.
-4. **Blog stays on nakrosis.com; cross-link both ways.** Articles targeting the informational long-tails (how to audit AI agents, EU AI Act logging for fintech, FCA AI Live Testing, is-the-AI-real) should link to the relevant trustflux.co.uk service section, and vice versa.
-5. **Year-stamp and refresh annually.** Ranking pages in these niches all carry "(2026)"-style freshness in titles and update yearly.
-6. **Google Search Console + Bing Webmaster Tools**: verify the domain, submit sitemap.xml, monitor which queries actually land.
+- Real pricing published: £600/day flat, £3,000 fixed Azure cost review, retainer maths on the fractional CTO page.
+- Service pages split: `/technology-due-diligence`, `/fractional-cto-london`, `/agentic-ai`, `/azure-cost-review` (shared `/styles.css` + `/site.js`; pages generated from a common template - keep header/footer in sync across all five HTML files when editing).
+- Article series live on nakrosis.com (ai-due-diligence-checklist, is-the-ai-real, how-to-audit-ai-agents), cross-linked both ways.
+- Google Search Console verified (keep `googleb67550b75f1276bd.html`), sitemap submitted.
+
+### Roadmap (next)
+
+1. **Checklist lead magnets.** Every DD SERP is dominated by checklist pages with downloads: a downloadable "AI due diligence checklist" PDF is the obvious first one.
+2. **Republish the article series on Medium** with canonical links to nakrosis.com.
+3. **Year-stamp and refresh annually.** Ranking pages in these niches all carry "(2026)"-style freshness in titles and update yearly.
+4. **Bing Webmaster Tools** verification and sitemap submission.
+5. Monitor Search Console queries; expand whichever service page draws impressions first.
 
 ## Selected work section
 
