@@ -1,3 +1,29 @@
+/* ---------- fonts (self-hosted, subset to latin - see fonts/README.md) ---------- */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/inter-var-latin.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+0160-0161, U+0178, U+017D-017E, U+0192,
+    U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022,
+    U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122, U+2190-2193, U+2212,
+    U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Space Grotesk";
+  font-style: normal;
+  font-weight: 500 700;
+  font-display: swap;
+  src: url("/fonts/space-grotesk-var-latin.woff2") format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+0160-0161, U+0178, U+017D-017E, U+0192,
+    U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2020-2022,
+    U+2026, U+2030, U+2039-203A, U+2044, U+20AC, U+2122, U+2190-2193, U+2212,
+    U+FEFF, U+FFFD;
+}
+
 :root {
   --ink: #0d1424;
   --text: #37415a;
@@ -69,7 +95,7 @@ section { scroll-margin-top: 5.5rem; }
 .wordmark span { background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
 .site-nav { display: flex; gap: 0.25rem; margin-left: auto; flex-wrap: wrap; }
 .site-nav a {
-  font-size: 0.83rem; font-weight: 500; color: var(--dark-text);
+  font-size: 0.83rem; font-weight: 500; color: #c8d3ec;
   padding: 0.4rem 0.7rem; border-radius: 999px; transition: color 0.2s, background 0.2s;
 }
 .site-nav a:hover { color: #fff; }
@@ -400,11 +426,13 @@ section { scroll-margin-top: 5.5rem; }
 .page-hero .lede { font-size: clamp(1rem, 1.4vw, 1.12rem); color: #b9c5e2; max-width: 42rem; margin-bottom: 1.8rem; }
 .page-hero .lede a { color: #dbe7ff; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(96, 165, 250, 0.6); }
 .crumbs { font-size: 0.8rem; color: #7e8bab; margin: 0 0 1.5rem; }
-.crumbs a { color: #9fb1d8; }
+.crumbs a { color: #9fb1d8; text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(159, 177, 216, 0.5); }
 .crumbs a:hover { color: #fff; }
 .crumbs .sep { margin: 0 0.45rem; color: #3a4a6e; }
 
 .prose { max-width: 46rem; }
+.prose a { color: #2563eb; text-decoration: underline; text-underline-offset: 2px; text-decoration-color: rgba(37, 99, 235, 0.45); }
+.prose a:hover { color: #1d4ed8; text-decoration-color: currentColor; }
 .prose h2 { font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 700; margin: 2.6rem 0 0.9rem; }
 .prose h2:first-child { margin-top: 0; }
 .prose h3 { font-size: 1.08rem; font-weight: 600; margin: 1.6rem 0 0.5rem; }

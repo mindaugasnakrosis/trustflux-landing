@@ -1,6 +1,12 @@
 (function () {
   var header = document.querySelector(".site-header");
-  var onScroll = function () { header.classList.toggle("scrolled", window.scrollY > 8); };
+  var scrolled = null;
+  var onScroll = function () {
+    var next = window.scrollY > 8;
+    if (next === scrolled) return;
+    scrolled = next;
+    header.classList.toggle("scrolled", next);
+  };
   addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
