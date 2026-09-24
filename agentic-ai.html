@@ -125,7 +125,7 @@
     <div class="container">
       <div class="prose">
 <h2>Deployed, not piloted</h2>
-<p>This is not a practice area invented for the AI cycle. Agentic AI ran in production trading workflows and operational tooling under my technical authority at a regulated trading venue, where the systems carried real orders with real money behind them. That experience shapes everything here: reversibility-classified action spaces, human approval gates for what cannot be undone, and traces a compliance officer can read without an engineer translating.</p>
+<p>This is not a practice area invented for the AI cycle. As VP of Technology at Intick, a block trading venue for futures and options, I built and ran a Claude-powered incident-triage agent in production: incidents published to Azure Service Bus triggered a tool-using loop that found the root cause and alerted the right people in Slack. Its tools were then extracted into MCP servers used across the company, so colleagues could put the same capabilities into their own work. All of this ran next to a platform where a single failed block order could be existential. That experience shapes everything here: reversibility-classified action spaces, human approval gates for what cannot be undone, and traces a compliance officer can read without an engineer translating.</p>
 <h2>What I build and review</h2>
 <ul class="checklist">
   <li>Agentic system design and build: production LLM workflows, evaluation gates, guardrails and fallback paths</li>
@@ -133,6 +133,8 @@
   <li>AI agent security review mapped against the OWASP Top 10 for Agentic Applications: prompt injection paths, tool misuse, credential exposure</li>
   <li>AI capability assessment: separating shipped systems from demos, for boards and for buyers</li>
   <li>Claude Code adoption for engineering teams: skills, hooks and review tooling, backed by published open-source work</li>
+  <li>AI workflow adoption: mapping how the team actually works, then shipping agents and MCP servers over the company's own data as shared tools everyone uses</li>
+  <li>Operations automation: incident triage, cloud cost review, backlog preparation and pre-merge review, encoded once and run on demand</li>
 </ul>
 <h2>The governance dividend</h2>
 <p>Teams treat audit trails as drag. They are the opposite: the permission slip that lets agents near consequential work at all. A system that can always answer "what did it do, and why" gets deployed into higher-value workflows; one that cannot stays a pilot forever. I have written up the working method in <a href="https://nakrosis.com/writing/how-to-audit-ai-agents" rel="noopener">How to audit AI agents</a> and the underlying argument in <a href="https://nakrosis.com/writing/agent-observability" rel="noopener">the agent observability essay</a>.</p>
